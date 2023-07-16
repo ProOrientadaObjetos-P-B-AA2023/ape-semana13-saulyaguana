@@ -47,13 +47,13 @@ public class Televisor {
         return s;
     }
     
-    public String listaMarcasVendidas(ArrayList<Televisor> t){
-        String s = "";
-        for (int i = 0; i < t.size(); i++) {
-            s = String.format("%s%s\n", s, t.get(i).obtenerMarca());
-        }
-        return s;
-    }
+//    public String listaMarcasVendidas(ArrayList<Televisor> t){
+//        String s = "";
+//        for (int i = 0; i < t.size(); i++) {
+//            s = String.format("%s%s\n", s, t.get(i).obtenerMarca());
+//        }
+//        return s;
+//    }
     
     @Override
     public String toString(){

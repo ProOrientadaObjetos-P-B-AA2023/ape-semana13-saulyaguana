@@ -5,6 +5,7 @@
 package paquete005;
 
 import paquete003.BilleteraPagos;
+import paquete004.PagoAguaPotable;
 
 /**
  *
@@ -12,7 +13,13 @@ import paquete003.BilleteraPagos;
  */
 public class Principal {
     public static void main(String[] args) {
-        BilleteraPagos pago = new BilleteraPagos();
-        System.out.println(pago);
+        BilleteraPagos pago = new BilleteraPagos() {
+            @Override
+            public double calcularPago() {
+                return 0;
+            }
+        };
+        PagoAguaPotable agua = new PagoAguaPotable();
+        System.out.println(agua);
     }
 }

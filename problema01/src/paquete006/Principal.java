@@ -12,7 +12,12 @@ import paquete003.BilleteraPagos;
  */
 public class Principal {
     public static void main(String[] args) {
-        BilleteraPagos pago = new BilleteraPagos();
+        BilleteraPagos pago = new BilleteraPagos() {
+            @Override
+            public double calcularPago() {
+                return 0;
+            }
+        };
         System.out.println(pago);
     }
 }

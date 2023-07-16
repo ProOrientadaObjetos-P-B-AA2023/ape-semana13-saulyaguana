@@ -27,6 +27,6 @@ public class Persona {
         this.ciudad = ciudad;
     }
 
-    
+
     
 }

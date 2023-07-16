@@ -10,4 +10,24 @@ package paquete002;
  */
 public class Ciudad {
     String nombreCiudad;
+
+    public Ciudad() {
+    }
+
+    public Ciudad(String nombreCiudad) {
+        this.nombreCiudad = nombreCiudad;
+    }
+
+    public String getNombreCiudad() {
+        return nombreCiudad;
+    }
+
+    public void setNombreCiudad(String nombreCiudad) {
+        this.nombreCiudad = nombreCiudad;
+    }
+
+    @Override
+    public String toString() {
+        return "Ciudad{" + "Nombre de la Ciudad = " + nombreCiudad + '}';
+    }
 }
